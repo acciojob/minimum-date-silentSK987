@@ -9,10 +9,11 @@ function minDate(dates) {
             str+=elm[i];
         }
         num=parseInt(str);
-        min=Math.min(min,num);
+        min=Math.min(min,num); 
     });
-    console.log(min);
-    let str1=String(min);
+    console.log(min);//checking min value printing or not
+    
+    let str1=String(min);//number-->string
     let newstr="";
     for(i=0;i<str1.length;i++)
     {
@@ -21,7 +22,7 @@ function minDate(dates) {
             newstr+='/';
         }
        
-            newstr+=str1[i];
+         newstr+=str1[i];
        
     }
 
